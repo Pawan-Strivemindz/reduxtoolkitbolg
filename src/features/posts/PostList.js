@@ -36,15 +36,7 @@ const PostList = () => {
       {content}
       <div style={{ textAlign: "center" }}>
         {number > 1 && (
-          <button
-            style={{
-              marginRight: "10px",
-              backgroundColor: "blue",
-              color: "white",
-              fontWeight: "bold",
-            }}
-            onClick={() => setNumber(number - 1)}
-          >
+          <button className="pageButton" onClick={() => setNumber(number - 1)}>
             Prev
           </button>
         )}
@@ -68,15 +60,7 @@ const PostList = () => {
           );
         })}
         {number < pageNumber.length && (
-          <button
-            style={{
-              marginRight: "10px",
-              backgroundColor: "blue",
-              color: "white",
-              fontWeight: "bold",
-            }}
-            onClick={() => setNumber(number + 1)}
-          >
+          <button className="pageButton" onClick={() => setNumber(number + 1)}>
             Next
           </button>
         )}

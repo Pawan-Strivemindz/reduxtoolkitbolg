@@ -128,3 +128,12 @@ textarea {
   background-color: palevioletred;
   color: white;
 }
+
+.pageButton {
+  margin-right: 10px;
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 5px;
+}
